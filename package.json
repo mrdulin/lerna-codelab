@@ -5,7 +5,7 @@
     "bootstrap": "lerna bootstrap",
     "test": "lerna run test",
     "link-convert": "lerna link convert",
-    "clean": "lerna clean"
+    "clean": "lerna clean -y"
   },
   "devDependencies": {
     "@types/jest": "^26.0.20",
@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "pkg-a": "file:packages/pkg-a",
-    "pkg-b": "file:packages/pkg-b"
+    "pkg-b": "file:packages/pkg-b",
+    "shared": "file:packages/shared"
   }
 }
