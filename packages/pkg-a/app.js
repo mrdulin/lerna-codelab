@@ -1,4 +1,5 @@
 const express = require("express");
+const chalk = require("chalk");
 const app = express();
 
 app.get("/", (req, res) => {
@@ -6,5 +7,5 @@ app.get("/", (req, res) => {
 });
 
 app.listen(3000, () =>
-  console.log("HTTP server started at http://localhost:3000")
+  console.log(chalk.green("HTTP server started at http://localhost:3000"))
 );
